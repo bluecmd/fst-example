@@ -1,0 +1,28 @@
+[timestart] 0
+[size] 3000 1840
+[pos] -1 -1
+*-0.489549 2 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Example.
+[sst_width] 418
+[signals_width] 308
+[sst_expanded] 1
+[sst_vpaned_height] 543
+@c00420
+Example.Function.integer
+@28
+(0)Example.Function.integer
+(1)Example.Function.integer
+(2)Example.Function.integer
+(3)Example.Function.integer
+(4)Example.Function.integer
+(5)Example.Function.integer
+(6)Example.Function.integer
+(7)Example.Function.integer
+@1401200
+-group_end
+@28
+Example.Function.string
+@100000029
+Example.Function.enum[2:0]
+[pattern_trace] 1
+[pattern_trace] 0
