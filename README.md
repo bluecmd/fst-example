@@ -2,6 +2,8 @@
 
 Example how to use the Fast Signal Trace (FST) format and library.
 
+![gtkwave screenshot](example.png)
+
 This uses the C library from GTKwave (via Verilator).
 The library appears to not be packaged as a stand-alone library so
 it has to be included in a bit non-conventional manner.
