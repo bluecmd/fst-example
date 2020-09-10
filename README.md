@@ -9,3 +9,8 @@ it has to be included in a bit non-conventional manner.
 ## Usage
 
 Run `make wave` to execute the example and load it up in GTKwave.
+
+## Samples
+
+The `samples` directory contains potentially interesting FST files from the real world.
+It can be used for playing with the library or as test vectors for an implementation.
