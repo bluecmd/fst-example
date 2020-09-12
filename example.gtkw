@@ -22,7 +22,8 @@ Example.Function.integer
 -group_end
 @28
 Example.Function.string
-@100000029
 Example.Function.enum[2:0]
+@29
+Example.Function.event
 [pattern_trace] 1
 [pattern_trace] 0

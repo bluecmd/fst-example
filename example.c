@@ -25,7 +25,7 @@ int main() {
   fstEnumHandle enumMap = fstWriterCreateEnumTable(
       fst, "ExampleEnum", /* elements */ 3, 0, enumNames, enumValues);
 
-  fstHandle varInt, varEnum, varString;
+  fstHandle varInt, varEnum, varString, varEvent;
 
   // Create a tree like this:
   //
@@ -40,6 +40,7 @@ int main() {
 
   varInt    = fstWriterCreateVar(fst, FST_VT_VCD_INTEGER, FST_VD_INPUT, 8, "integer", /* alias */ 0);
   varString = fstWriterCreateVar(fst, FST_VT_GEN_STRING, FST_VD_OUTPUT, 0, "string", /* alias */ 0);
+  varEvent  = fstWriterCreateVar(fst, FST_VT_VCD_EVENT, FST_VD_OUTPUT, 1, "event", /* alias */ 0);
 
   // Activate enum for next variable defined
   fstWriterEmitEnumTableRef(fst, enumMap);
@@ -55,6 +56,7 @@ int main() {
   fstWriterEmitTimeChange(fst, 1);
   for (int i = 2; i < 1000;) {
     fstWriterEmitValueChange32(fst, varInt, 8, 100 + i);
+    fstWriterEmitValueChange32(fst, varEvent, 1, 1);
     fstWriterEmitVariableLengthValueChange(fst, varString, "str1", 4);
     fstWriterEmitValueChange(fst, varEnum, "001");
     fstWriterEmitTimeChange(fst, i++);
